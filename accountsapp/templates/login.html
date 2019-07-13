@@ -1,0 +1,19 @@
+{% extends 'accountbase.html' %}
+{% block content %}
+  <div class="login_box">
+    <div class="login_contents">
+      <form method="POST" action="{% url 'login'%}">
+        {% csrf_token %}
+        <div class="login_id">ID</div>
+        <input type="text" class="input_id" name="username" />
+        <div class="login_pwd">password</div>
+        <input type="password" class="input_pwd" name="password" />
+        <div class="button">
+          <button type="submit" value="Login" class="button">Log in</button>
+      </form>
+      <button class="button"><a href="{% url 'signup' %}">
+          Sign up
+        </button>
+      </a>
+    </div>
+{% endblock %}

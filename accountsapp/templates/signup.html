@@ -1,0 +1,18 @@
+{% extends 'accountbase.html' %}
+{% block content %}
+    <div class="login_box">
+      <div class="login_contents">
+        <div class="login_id">ID</div>
+        <input type="text" class="input_id" name="username" />
+        <div class="login_pwd">password</div>
+        <input type="password" class="input_pwd" name="password1" />
+        <div class="login_pwd">confirm password</div>
+        <input type="password" class="input_pwd" name="password2" />
+        <div class="button">
+          <a href="#"
+            ><button class="button">
+              Register
+            </button>
+          </a>
+        </div>
+{% endblock %}
