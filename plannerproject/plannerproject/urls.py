@@ -18,7 +18,6 @@ from django.urls import path,include
 import accountsapp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', accountsapp.views.home, name = "home"),
-    path('signup/', accountsapp.views.signup, name = "signup"),
-    path('', include('cal.urls')),
+    path('', include('accountsapp.urls')),
+    path('as', include('cal.urls')),
 ]

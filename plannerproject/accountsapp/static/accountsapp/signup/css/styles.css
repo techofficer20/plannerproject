@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+.login_body {
+  width: 100%;
+  height: 100%;
+}
+.login_title,
+.login_box {
+  text-align: center;
+  font-family: "Shadows Into Light";
+}
+.login_box input {
+  font-family: "Shadows Into Light";
+}
+.login_box .input_id,
+.login_box .input_pwd {
+  text-align: center;
+}
+.login_box {
+  width: 30%;
+  height: 60%;
+  margin: 0 auto;
+}
+.login_contents {
+  text-align: center;
+}
+.login_id,
+.input_id,
+.login_pwd,
+.input_pwd {
+  margin-bottom: 2%;
+}
+.input_id,
+.input_pwd {
+  background-color: none;
+  border: 2px solid #e6e6e6;
+  width: 35%;
+  border-radius: 5px 10px;
+  outline: none;
+  font-size: 180%;
+}
+.login_title,
+.login_id,
+.login_pwd {
+  color: white;
+  font-size: 300%;
+}
+.button {
+  font-family: "Shadows Into Light";
+  font-size: 120%;
+  margin-left: 1%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+}

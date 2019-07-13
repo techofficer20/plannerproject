@@ -1,31 +1,19 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="{% static 'css/styles.css'%}" />
-    <title>Document</title>
-  </head>
-  <body class="login_body">
-    <h1 class="login_title">E-Planner</h1>
-    <div class="login_box">
-      <div class="login_contents">
+{% extends 'accountbase.html' %}
+{% block content %}
+  <div class="login_box">
+    <div class="login_contents">
+      <form method="POST" action="{% url 'login'%}">
+        {% csrf_token %}
         <div class="login_id">ID</div>
         <input type="text" class="input_id" name="username" />
         <div class="login_pwd">password</div>
         <input type="password" class="input_pwd" name="password" />
         <div class="button">
-          <button class="button">Log in</button>
-          <a href="{% url 'signup' %}"
-            ><button class="button">
-              Sign up
-            </button>
-          </a>
-        </div>
-      </div>
+          <button type="submit" value="Login" class="button">Log in</button>
+      </form>
+      <button class="button"><a href="{% url 'signup' %}">
+          Sign up
+        </button>
+      </a>
     </div>
-    <script src="{% static 'login_bg.js' %}"></script>
-  </body>
-</html>
+{% endblock %}
