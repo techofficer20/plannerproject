@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'plannerapp.apps.PlannerappConfig',
     'accountsapp.apps.AccountsappConfig',
-    'cal'
+    'cal.apps.CalConfig',
     
 ]
 
