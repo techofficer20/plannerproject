@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'plannerapp.apps.PlannerappConfig',
     'accountsapp.apps.AccountsappConfig',
-    'cal.apps.CalConfig'
+    'cal'
+    
 ]
 
 MIDDLEWARE = [

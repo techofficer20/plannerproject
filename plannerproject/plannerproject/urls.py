@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 import accountsapp.views
+import cal.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('accountsapp.urls')),
-    path('as', include('cal.urls')),
+    path('calendar/', cal.views.calendar, name = "calendar")
 ]
