@@ -124,12 +124,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'accountsapp', 'static'),
-    '/var/www/static/',
-    # static íŒŒì¼ë“¤ì´ í˜„ì¬ ì–´ë””ì— ìˆëŠ”ì§€ë¥¼ ì“°ëŠ” ê³³
+    # static ÆÄÀÏµéÀÌ ÇöÀç ¾îµğ¿¡ ÀÖ´ÂÁö¸¦ ¾²´Â °÷
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# static ÆÄÀÏµéÀÌ ¾îµğ·Î ¸ğÀÏ °ÍÀÎÁö¸¦ ¾²´Â °÷ 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
+) 
