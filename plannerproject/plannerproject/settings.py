@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'plannerapp.apps.PlannerappConfig',
     'accountsapp.apps.AccountsappConfig',
     'cal.apps.CalConfig',
-    
+    'todo.apps.TodoConfig',
 ]
 
 MIDDLEWARE = [
@@ -124,11 +124,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'accountsapp', 'static'),
-    # static ÆÄÀÏµéÀÌ ÇöÀç ¾îµð¿¡ ÀÖ´ÂÁö¸¦ ¾²´Â °÷
+    # static ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# static ÆÄÀÏµéÀÌ ¾îµð·Î ¸ðÀÏ °ÍÀÎÁö¸¦ ¾²´Â °÷ 
+# static ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
